@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-shell-extensions-gsystemd">
+
+    <enum id='org.gnome.shell.extensions.gsystemd.mode'>
+        <value value='0' nick='Autoscan'/>
+        <value value='1' nick='Custom'/>
+    </enum>
+
+    <schema path="/org/gnome/shell/extensions/services/" id="org.gnome.shell.extensions.gsystemd">
+
+        <key enum="org.gnome.shell.extensions.gsystemd.mode" name="mode">
+            <default>'Autoscan'</default>
+            <summary>The method to autoscan services into paths</summary>
+        </key>
+        
+        <key type="as" name="systemd-paths">
+            <default><![CDATA[['/etc/systemd/system','/lib/systemd/system']]]></default>
+            <summary>Systemd service path</summary>
+            <description>A list of services paths which are autoscan</description>
+        </key>
+
+        <key type="i" name="autoscan-max">
+            <default>5</default>
+            <summary>Show Max autoscan services</summary>
+            <description>Show Max autoscan services</description>
+        </key>
+
+        <key type="as" name="systemd-services">
+            <default>[ ]</default>
+            <summary>Systemd service list</summary>
+            <description>A list of services which are shown</description>
+        </key>
+
+        <key type="b" name="show-restart">
+            <default>true</default>
+            <summary>Show the restart button for each service</summary>
+            <description>Whether to show the restart button for each service.</description>
+        </key>
+
+        <key type="b" name="show-refresh">
+            <default>true</default>
+            <summary>Show the refresh buttons</summary>
+            <description>Show butons to refres services and status</description>
+        </key>
+
+    </schema>
+</schemalist>

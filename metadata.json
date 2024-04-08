@@ -1,0 +1,9 @@
+{
+  "name": "gsystemd",
+  "description": "gsystemd",
+  "settings-schema": "org.gnome.shell.extensions.gsystemd",
+  "uuid": "gsystemd@randombitsonfire.com",
+  "shell-version": [
+    "45"
+  ]
+}

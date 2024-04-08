@@ -1,0 +1,7 @@
+/* Add your custom extension styling here */
+.system-menu-action.gsystemd-button-reload {
+    height: 18px;
+    width: 18px;
+    padding: 0px;
+    border: 0px;
+}
